@@ -1,6 +1,6 @@
 
 upstream nodejs {
-      server 127.0.0.1:3111 max_fails=0;
+      server 127.0.0.1:9999 max_fails=0;
  }
 server {
        listen         80;
@@ -13,8 +13,8 @@ server {
 
      listen 443;
       ssl    on;
-      ssl_certificate /var/www/html/public.crt;
-      ssl_certificate_key /var/www/html/private.key;
+      ssl_certificate /........../public.crt;
+      ssl_certificate_key /........../private.key;
 
 
     server_name troop.tech;
