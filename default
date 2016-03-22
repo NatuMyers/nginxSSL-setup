@@ -1,13 +1,12 @@
-
 upstream nodejs {
       server 127.0.0.1:9999 max_fails=0;
  }
+ 
 server {
        listen         80;
        server_name    troop.tech;
        return         301 https://$server_name$request_uri;
 }
-
 
 server {
 
